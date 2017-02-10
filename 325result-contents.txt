@@ -1,0 +1,121 @@
+Displaying table cus (Customer):
+
+CUS_ID F_NAME     L_NAME                                                        
+------ ---------- ----------                                                    
+000A23 Doug       Stanhope                                                      
+000A24 Dan        Stoop                                                         
+000A25 Sam        Saloon                                                        
+
+
+CUS_ID FIRST_VIS  NUM_TRANS                                                     
+------ --------- ----------                                                     
+000A23 29-NOV-16          2                                                     
+000A24 29-NOV-16          4                                                     
+000A25 29-NOV-16          1                                                     
+
+Displaying table job_title_charge:
+
+JOB_TITLE                                HOURLY_WAGE                            
+---------------------------------------- -----------                            
+Manager                                           20                            
+Cus Service                                       10                            
+Assistant to the Regional Manager                200                            
+Logistics                                         12                            
+
+Displaying table emp (employee):
+
+EMP_I F_NAME     L_NAME                                                         
+----- ---------- ----------                                                     
+12345 Jimbo      Slice                                                          
+12346 Betty      Carazon                                                        
+12347 Ben        Carson                                                         
+12348 Dwight     Shrute                                                         
+
+
+EMP_I HIRE_DATE WEEKLY_HOURS JOB_TITLE                                          
+----- --------- ------------ ----------------------------------------           
+12345 29-NOV-16         20.5 Manager                                            
+12346 29-NOV-16         10.5 Cus Service                                        
+12347 29-NOV-16         12.5 Logistics                                          
+12348 29-NOV-16           45 Assistant to the Regional Manager                  
+
+Displaying table trans (transaction):
+
+TRANS_I                                                                         
+-------                                                                         
+TRANS_TIME                                                                      
+---------------------------------------------------------------------------     
+1234568                                                                         
+29-NOV-16 08.22.17.244864 PM                                                    
+                                                                                
+
+
+TRANS_I EMP_I CUS_ID                                                            
+------- ----- ------                                                            
+1234568 12348 000A23                                                            
+
+Displaying tables supplier
+
+SUP_I SUP_NAME             NUM_SHIPMENTS                                        
+----- -------------------- -------------                                        
+12345 RecordDudes                    203                                        
+12346 Movie Guys                      22                                        
+
+Displaying table shipment:
+
+TRACKIN SHIP_DATE       COST                                                    
+------- --------- ----------                                                    
+1234567 29-NOV-16     2200.9                                                    
+
+
+TRACKIN SUP_I                                                                   
+------- -----                                                                   
+SHIP_TIME                                                                       
+---------------------------------------------------------------------------     
+1234567 12345                                                                   
+29-NOV-16 08.22.17.682612 PM                                                    
+                                                                                
+
+displaying table stock:
+
+STOCK_C TITLE                          S                                        
+------- ------------------------------ -                                        
+1234567 Rocky Horror Picture Show      m                                        
+1234568 Kid A                          a                                        
+
+
+STOCK_C      PRICE NUM_IN_STOCK                                                 
+------- ---------- ------------                                                 
+1234567      32.34           20                                                 
+1234568      12.34           10                                                 
+
+displaying table ship transaction:
+
+TRACKIN STOCK_C                                                                 
+------- -------                                                                 
+1234567 1234567                                                                 
+
+displaying table movies:
+
+STOCK_C TITLE                          DIRECTOR             GENRE        MPAA   
+------- ------------------------------ -------------------- ------------ -----  
+1234567 Rocky Horror Picture Show      Dan Rather           Musical      R      
+
+displaying table movie_format:
+
+STOCK_C M_FORMAT                                                                
+------- ----------                                                              
+1234567 VHS                                                                     
+
+displaying table albums:
+
+STOCK_C TITLE                          ARTIST               GENRE               
+------- ------------------------------ -------------------- ------------        
+1234568 Kid A                          Radiohead            Experimental        
+
+displaying table album format:
+
+STOCK_C A_FORMAT                                                                
+------- ----------                                                              
+1234568 Tape                                                                    
+
